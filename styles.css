@@ -183,3 +183,67 @@ form button:hover {
     width: 90%;
   }
 }
+
+/* Team Section Styling */
+.team-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap if needed, though explicit rows are made */
+  justify-content: center; /* Centers the cards within their row */
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.team-member-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  width: 200px; /* Adjust as needed, ensures 3 cards fit in a typical 900px main area */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex; /* To help align content if needed */
+  flex-direction: column; /* Stack image, name, designation vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.team-member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #4CAF50; /* Theme color border */
+}
+
+.team-member-name {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.team-member-designation {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0;
+}
+
+/* Responsive adjustments for team cards */
+@media (max-width: 768px) {
+  .team-member-card {
+    width: calc(50% - 20px); /* Two cards per row on medium screens, considering gap */
+  }
+  .team-row {
+    justify-content: space-around; /* Better distribution for 2 cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member-card {
+    width: 80%; /* One card per row on small screens, slightly less than full width */
+  }
+   .team-row {
+    justify-content: center;
+  }
+}
