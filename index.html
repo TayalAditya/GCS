@@ -10,8 +10,73 @@
 <body>
   <div id="site-header"></div>
   <main>
+
     <h2>Welcome to Guidance & Counseling Services</h2>
-    <p>We are here to support the mental well-being of IIT Mandi students.</p>
+
+    <!-- Intro + Image -->
+    <section class="intro">
+      <div class="intro-text">
+        <p>We at our department offer mental health support and help to equip you to be the best version of yourself, academically and personally. We focus on providing guidance and counselling for any mental health concerns.</p>
+        <p>Just as it is important to take care of our physical health, we aim to work towards taking care of our mental health.</p>
+      </div>
+      <div class="intro-image">
+        <img src="images/intro1.png" alt="Guidance intro">
+        <button class="view-intro-image">View Image</button>
+        <dialog id="intro-modal">
+          <img src="images/intro1.png" alt="Guidance intro large">
+          <button id="close-intro-modal">Close</button>
+        </dialog>
+      </div>
+    </section>
+
+    <!-- Department Goals: Vision & Mission -->
+    <section class="department-goals">
+      <img src="images/collage.jpg" alt="GCS Department Collage">
+      <div class="goals-text">
+        <div class="goal-block">
+          <h3>The Mission</h3>
+          <p>To work towards strengthening the students, staff and faculty to be the best version of themselves.</p>
+        </div>
+        <div class="goal-block">
+          <h3>The Vision</h3>
+          <p>To create an environment free of mental health stigma, to increase awareness and build resilience in the campus.</p>
+        </div>
+      </div>
+    </section> <!-- end .department-goals -->
+
+    <!-- Our Policies -->
+    <section class="policies">
+      <h2>Our Policies</h2>
+
+      <!-- Top row: 3 cards -->
+      <div class="policies-top">
+        <div class="policy-card">
+          <h3>Confidentiality</h3>
+          <p>We aim to provide confidential counselling sessions. Privacy of all the students will be maintained. Exceptions: In case of harm to self or others or where there are any legal implications, confidentiality may be breached upon.</p>
+        </div>
+        <div class="policy-card">
+          <h3>Free of cost</h3>
+          <p>The services are provided free of cost to all the IIT Mandi registered users.</p>
+        </div>
+        <div class="policy-card">
+          <h3>Feedback</h3>
+          <p>We look forward to learning and taking feedback from you in order to improve and function better. Your feedback can be shared in writing or in person with the GCS Counselor or anonymously in the feedback box outside the GCS office.</p>
+        </div>
+      </div>
+
+      <!-- Bottom row: 2 cards, centered -->
+      <div class="policies-bottom">
+        <div class="policy-card">
+          <h3>Anti-Discrimination</h3>
+          <p>The services are provided to all users. GCS has an anti-discrimination policy ensuring equal and fair treatment to all.</p>
+        </div>
+        <div class="policy-card">
+          <h3>No stigma</h3>
+          <p>GCS offers you a safe space to discuss your concerns. Remember: It is okay to not be okay. We are here for you.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer>
     <p>&copy; 2023 Guidance & Counseling Services, IIT Mandi</p>
